@@ -3,17 +3,21 @@ import 'dart:async';
 import 'package:box_storage/domain/services/theme_service.dart';
 import 'package:box_storage/ui/app_navigation/app_navigation.dart';
 import 'package:box_storage/ui/application/app_state.dart';
+import 'package:box_storage/ui/theme/theme.dart';
 import 'package:flutter/cupertino.dart';
 
 class AppViewModel extends ChangeNotifier {
   final ThemeService _themeService = ThemeService();
   final AppNavigation _appNavigation = AppNavigation();
+  final ApplicationTheme _applicationTheme = ApplicationTheme();
 
   AppState _state = const AppState(isDarkTheme: false, isOfflineMode: false);
 
   AppState get state => _state;
 
   AppNavigation get appNavigation => _appNavigation;
+
+  ApplicationTheme get applicationTheme => _applicationTheme;
 
   late StreamSubscription _themeSubscription;
 

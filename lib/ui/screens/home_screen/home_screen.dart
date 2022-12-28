@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final HomeScreenViewModel viewModel = context.read<HomeScreenViewModel>();
     return CupertinoTabScaffold(
-      tabBuilder: (builder, int index) => SafeArea(child: viewModel.renderScreen(screenIndex: index)),
+      tabBuilder: (builder, int index) => viewModel.renderScreen(screenIndex: index),
       tabBar: CupertinoTabBar(
         items: const [
           BottomNavigationBarItem(

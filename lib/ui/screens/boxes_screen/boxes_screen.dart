@@ -9,12 +9,22 @@ class BoxesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CupertinoPageScaffold(
-      navigationBar: CupertinoNavigationBar(
-        middle: Text('Boxes'),
-      ),
-      child: SafeArea(
-        child: Placeholder(),
+    return CupertinoPageScaffold(
+      child: CupertinoPageScaffold(
+        child: CustomScrollView(
+          slivers: [
+            CupertinoSliverNavigationBar(
+              border: null,
+              backgroundColor: CupertinoColors.systemFill.withOpacity(.0),
+              largeTitle: const Text('Boxes'),
+            ),
+            const SliverFillRemaining(
+              child: Center(
+                child: Text('No data'),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

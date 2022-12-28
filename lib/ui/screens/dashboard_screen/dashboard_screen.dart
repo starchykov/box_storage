@@ -9,12 +9,20 @@ class DashboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CupertinoPageScaffold(
-      navigationBar: CupertinoNavigationBar(
-        middle: Text('Dashboard'),
-      ),
-      child: SafeArea(
-        child: Placeholder(),
+    return CupertinoPageScaffold(
+      child: CustomScrollView(
+        slivers: [
+          CupertinoSliverNavigationBar(
+            border: null,
+            backgroundColor: CupertinoColors.systemBackground.withOpacity(0),
+            largeTitle: const Text('Dashboard'),
+          ),
+          const SliverFillRemaining(
+            child: Center(
+              child: Text('No data'),
+            ),
+          ),
+        ],
       ),
     );
   }
