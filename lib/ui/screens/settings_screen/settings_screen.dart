@@ -30,9 +30,9 @@ class SettingsScreen extends StatelessWidget {
           SliverFillRemaining(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                const _SettingsProfile(),
-                const _SettingsTheme(),
+              children: const <Widget>[
+                _SettingsProfile(),
+                _SettingsTheme(),
                 // CupertinoFormSection.insetGrouped(
                 //   header: const Text('SECTION 2'),
                 //   children: [

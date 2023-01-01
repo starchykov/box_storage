@@ -101,7 +101,7 @@ class _BoxItem extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(8),
                   width: (MediaQuery.of(context).size.width) * .30,
                   decoration: const BoxDecoration(
                     color: CupertinoColors.white,
@@ -122,7 +122,7 @@ class _BoxItem extends StatelessWidget {
                           width: double.maxFinite,
                           height: double.maxFinite,
                           padding: const EdgeInsets.all(8.0),
-                          child: Placeholder(),
+                          child: const Placeholder(),
                         ),
                       ),
                       Text(
