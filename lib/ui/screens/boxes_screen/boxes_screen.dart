@@ -17,6 +17,12 @@ class BoxesScreen extends StatelessWidget {
           CupertinoSliverNavigationBar(
             border: null,
             backgroundColor: CupertinoColors.systemFill.withOpacity(.0),
+            trailing: CupertinoButton(
+              minSize: 0,
+              padding: EdgeInsets.zero,
+              onPressed: () {},
+              child: const Icon(CupertinoIcons.add),
+            ),
             largeTitle: const Text('Boxes'),
           ),
           SliverFillRemaining(
@@ -46,12 +52,12 @@ class _BoxItem extends StatelessWidget {
       padding: EdgeInsets.zero,
       onPressed: () {},
       child: Container(
-        margin: const EdgeInsets.only(left: 15, top: 20, right: 15),
+        margin: const EdgeInsets.only(left: 15.0, top: 20.0, right: 15.0),
         width: MediaQuery.of(context).size.width,
-        height: 150,
+        height: 150.0,
         decoration: const BoxDecoration(
           color: CupertinoColors.secondarySystemFill,
-          borderRadius: BorderRadius.all(Radius.circular(12)),
+          borderRadius: BorderRadius.all(Radius.circular(12.0)),
         ),
         child: Stack(
           clipBehavior: Clip.hardEdge,
@@ -105,7 +111,7 @@ class _BoxItem extends StatelessWidget {
                   width: (MediaQuery.of(context).size.width) * .30,
                   decoration: const BoxDecoration(
                     color: CupertinoColors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(12)),
+                    borderRadius: BorderRadius.all(Radius.circular(12.0)),
                   ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -138,27 +144,27 @@ class _BoxItem extends StatelessWidget {
               ],
             ),
             Positioned(
-              top: -10,
-              right: (MediaQuery.of(context).size.width - 30) * .3,
+              top: -10.0,
+              right: (MediaQuery.of(context).size.width - 30.0) * .3,
               child: CircleAvatar(
-                radius: 10,
+                radius: 10.0,
                 backgroundColor: CupertinoTheme.of(context).brightness == Brightness.dark
                     ? CupertinoColors.black
                     : CupertinoColors.systemGroupedBackground,
               ),
             ),
             Positioned(
-              top: 18,
-              right: ((MediaQuery.of(context).size.width - 30) * .3) + 5,
-              height: 120,
-              width: 5,
+              top: 18.0,
+              right: ((MediaQuery.of(context).size.width - 30.0) * .3) + 5.0,
+              height: 120.0,
+              width: 5.0,
               child: CustomPaint(size: const Size(1, 125), painter: DashedLineVerticalPainter()),
             ),
             Positioned(
-              bottom: -10,
-              right: (MediaQuery.of(context).size.width - 30) * .3,
+              bottom: -10.0,
+              right: (MediaQuery.of(context).size.width - 30.0) * .3,
               child: CircleAvatar(
-                radius: 10,
+                radius: 10.0,
                 backgroundColor: CupertinoTheme.of(context).brightness == Brightness.dark
                     ? CupertinoColors.black
                     : CupertinoColors.systemGroupedBackground,
@@ -174,7 +180,7 @@ class _BoxItem extends StatelessWidget {
 class DashedLineVerticalPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    double dashHeight = 5, dashSpace = 5, startY = 0;
+    double dashHeight = 5.0, dashSpace = 5.0, startY = 0.0;
     final paint = Paint()
       ..color = CupertinoColors.white
       ..strokeWidth = 4;
