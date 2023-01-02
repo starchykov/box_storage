@@ -1,5 +1,5 @@
 import 'package:box_storage/ui/screens/boxes_screen/boxes_screen.dart';
-import 'package:box_storage/ui/screens/dashboard_screen/dashboard_screen.dart';
+import 'package:box_storage/ui/screens/categories_screen/categories_screen.dart';
 import 'package:box_storage/ui/screens/home_screen/home_screen.dart';
 import 'package:box_storage/ui/screens/settings_screen/settings_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -14,7 +14,7 @@ class AppNavigation {
   };
 
   final List<Widget> bottomNavigationScreens = <Widget>[
-    DashboardScreen.render(),
+    CategoriesScreen.render(),
     BoxesScreen.render(),
     SettingsScreen.render(),
   ];

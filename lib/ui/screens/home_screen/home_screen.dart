@@ -20,9 +20,9 @@ class HomeScreen extends StatelessWidget {
       tabBar: CupertinoTabBar(
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.circle_grid_3x3),
-            activeIcon: Icon(CupertinoIcons.circle_grid_3x3_fill),
-            label: 'Home',
+            icon: Icon(CupertinoIcons.layers_alt),
+            activeIcon: Icon(CupertinoIcons.layers_alt_fill),
+            label: 'Categories',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.cube_box),
