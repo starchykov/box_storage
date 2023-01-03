@@ -75,32 +75,107 @@ class _BoxItem extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'S: _ N: _____'.toUpperCase(),
-                        style: CupertinoTheme.of(context)
-                            .textTheme
-                            .navLargeTitleTextStyle
-                            .merge(TextStyle(color: CupertinoColors.label.withOpacity(.5))),
+                      Row(
+                        children: [
+                          RichText(
+                            text: TextSpan(
+                              text: 'S: '.toUpperCase(),
+                              style: CupertinoTheme.of(context)
+                                  .textTheme
+                                  .pickerTextStyle
+                                  .merge(TextStyle(color: CupertinoColors.label.withOpacity(.5))),
+                              children: [
+                                TextSpan(
+                                  text: 'A',
+                                  style: CupertinoTheme.of(context)
+                                      .textTheme
+                                      .pickerTextStyle.merge(
+                                    TextStyle(
+                                      color: CupertinoColors.label.withOpacity(.5),
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const SizedBox(width: 12.0),
+                          RichText(
+                            text: TextSpan(
+                              text: 'N: '.toUpperCase(),
+                              style: CupertinoTheme.of(context)
+                                  .textTheme
+                                  .pickerTextStyle.merge(TextStyle(color: CupertinoColors.label.withOpacity(.5))),
+                              children: [
+                                TextSpan(
+                                  text: '12345 ',
+                                  style: CupertinoTheme.of(context)
+                                      .textTheme
+                                      .pickerTextStyle.merge(
+                                        TextStyle(
+                                          color: CupertinoColors.label.withOpacity(.5),
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Category:',
+                            style: CupertinoTheme.of(context)
+                                .textTheme
+                                .textStyle
+                                .merge(TextStyle(color: CupertinoColors.label.withOpacity(.5))),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.only(left: 8),
+                            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                            decoration: const BoxDecoration(
+                              color: CupertinoColors.separator,
+                              borderRadius: BorderRadius.all(Radius.circular(12)),
+                            ),
+                            child: Center(
+                              child: Text(
+                                'Name',
+                                style: CupertinoTheme.of(context)
+                                    .textTheme
+                                    .tabLabelTextStyle
+                                    .merge(const TextStyle(color: CupertinoColors.white)),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Description:',
+                            style: CupertinoTheme.of(context)
+                                .textTheme
+                                .textStyle
+                                .merge(TextStyle(color: CupertinoColors.label.withOpacity(.5))),
+                          ),
+                          Text(
+                            'Lorem Ipsum is simply dummy text of the printing',
+                            style: CupertinoTheme.of(context)
+                                .textTheme
+                                .tabLabelTextStyle
+                                .merge(const TextStyle(color: CupertinoColors.label)),
+                          ),
+                        ],
                       ),
                       Text(
-                        'Description:'.toUpperCase(),
-                        style: CupertinoTheme.of(context)
-                            .textTheme
-                            .navTitleTextStyle
-                            .merge(TextStyle(color: CupertinoColors.label.withOpacity(.5))),
-                      ),
-                      Text(
-                        'Lorem Ipsum is simply dummy text of the printing',
+                        'Packed date: 01.01.2023',
                         style: CupertinoTheme.of(context)
                             .textTheme
                             .textStyle
-                            .merge(const TextStyle(color: CupertinoColors.label)),
-                      ),
-                      Text(
-                        'Packed date:'.toUpperCase(),
-                        style: CupertinoTheme.of(context)
-                            .textTheme
-                            .navTitleTextStyle
                             .merge(TextStyle(color: CupertinoColors.label.withOpacity(.5))),
                       ),
                     ],
