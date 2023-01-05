@@ -37,6 +37,7 @@ dependencies:
 
   #
   shared_preferences: ^2.0.15
+  sqflite: ^2.2.2
 
 
   # The following adds the Cupertino Icons font to your application.
