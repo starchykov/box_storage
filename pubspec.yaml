@@ -32,11 +32,15 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Package provides common operations for manipulating paths: joining, splitting, normalizing, etc.
+  path: ^1.8.2
+
   # Provider package for state management implementation
   provider: ^6.0.0
 
-  #
+  # Wraps platform-specific persistent storage for simple data (NSUserDefaults on iOS and macOS, SharedPreferences on Android, etc.)
   shared_preferences: ^2.0.15
+
   sqflite: ^2.2.2
 
 
