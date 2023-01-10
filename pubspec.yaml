@@ -1,5 +1,5 @@
 name: box_storage
-description: A new Flutter project.
+description: This application serves to facilitate the accounting and systematization of things that are stored for a long time.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
