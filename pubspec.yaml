@@ -41,7 +41,14 @@ dependencies:
   # Wraps platform-specific persistent storage for simple data (NSUserDefaults on iOS and macOS, SharedPreferences on Android, etc.)
   shared_preferences: ^2.0.15
 
+  # Flutter package for SQLite
   sqflite: ^2.2.2
+
+  # Package provides universal barcode and QR code scanner for Flutter based on MLKit.
+  mobile_scanner: ^2.1.0
+
+  # Package for QR code rendering via a Widget or custom painter.
+  qr_flutter: ^4.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
