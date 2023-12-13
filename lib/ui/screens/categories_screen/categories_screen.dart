@@ -74,9 +74,9 @@ class _AddCategory extends StatelessWidget {
           color: CupertinoColors.secondarySystemFill,
           borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
-        child: Column(
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Icon(CupertinoIcons.add),
             Text('Add'),
           ],
