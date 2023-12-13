@@ -27,10 +27,10 @@ class SettingsScreen extends StatelessWidget {
             largeTitle: const Text('Settings'),
             // trailing: Icon(CupertinoIcons.add_circled),
           ),
-          SliverFillRemaining(
+          const SliverFillRemaining(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const <Widget>[
+              children: <Widget>[
                 _SettingsProfile(),
                 _SettingsTheme(),
                 // CupertinoFormSection.insetGrouped(
@@ -148,9 +148,9 @@ class _SettingsProfile extends StatelessWidget {
                   ],
                 ),
                 const Spacer(),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.end,
-                  children: const <Widget>[SizedBox(width: 5), Icon(CupertinoIcons.forward)],
+                  children: <Widget>[SizedBox(width: 5), Icon(CupertinoIcons.forward)],
                 ),
               ],
             ),
